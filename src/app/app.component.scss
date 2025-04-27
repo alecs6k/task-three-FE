@@ -1,0 +1,17 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  align-items: center;
+  background: -webkit-linear-gradient(90deg,#1b2c55,#3d85a9,#63cac8,#b8edff);
+  background: linear-gradient(90deg,#1b2c55,#3d85a9,#63cac8,#b8edff);
+}
+
+.app-container-pages {
+  width: 70%;
+  height: 100vh;
+  overflow: auto;
+  background-color: white;
+}

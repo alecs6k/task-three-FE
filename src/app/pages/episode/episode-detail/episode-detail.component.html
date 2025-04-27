@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h2 class="display-4">{{ episode.name }}</h2>
+      <p><strong>Episode:</strong> {{ episode.episode }}</p>
+      <hr>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Episode Image</h5>
+          <img src="https://i.pinimg.com/1200x/94/1e/f5/941ef5787276fe429acebc37cf3bfdb0.jpg" class="card-img-top" alt="Episode Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-outline-primary mt-4" (click)="goBack()">
+    <i class="bi bi-arrow-left-circle"></i> Back
+  </button>
+</div>

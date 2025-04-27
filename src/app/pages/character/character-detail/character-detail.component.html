@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <img [src]="character.image" alt="{{ character.name }}" class="img-fluid rounded shadow-lg">
+    </div>
+
+    <div class="col-md-8">
+      <h2 class="display-4">{{ character.name }}</h2>
+      <p><strong>Status: </strong> <a class="badge bg-success">{{ character.status }}</a></p>
+      <p><strong>Species: </strong> {{ character.species }}</p>
+      <p><strong>Gender: </strong> {{ character.gender }}</p>
+      <p><strong>Type: </strong> {{ character.type || 'N/A' }}</p>
+      <p><strong>Origin: </strong> <a [href]="character.origin.url" target="_blank">{{ character.origin.name }}</a></p>
+      <p><strong>Location: </strong> <a [href]="character.location.url" target="_blank">{{ character.location.name }}</a></p>
+      <p><strong>Number of episodes: </strong> {{ character.episode.length }}</p>
+
+      <button class="btn btn-outline-primary mt-3" (click)="goBack()">
+        <i class="bi bi-arrow-left-circle"></i> Back
+      </button>
+    </div>
+  </div>
+</div>

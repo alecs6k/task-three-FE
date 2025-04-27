@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <div class="header-section">
+    <h2>Locations</h2>
+    <a routerLink="/" class="btn btn-primary">Return menu</a>
+  </div>
+  <div class="row">
+    <div *ngFor="let location of locations" class="col-md-4 mb-4">
+      <div class="card" style="width: 18rem;" (click)="redirectToDetails(location)">
+        <div class="card-body">
+          <h5 class="card-title">{{ location.name }}</h5>
+          <p class="card-text">
+            <strong>Type:</strong> {{ location.type }} <br>
+            <strong>Dimension:</strong> {{ location.dimension }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
